@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA II</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body oncontextmenu="return false">
+    <div class="main">
+        <nav>
+            <h1><font style="color: #EA214D;">A</font>ditya</h1>
+            <a href="index.html">Home</a>
+            <a href="MCA II.html">MCA II</a>
+        </nav>
+
+        <header class="title">
+            <h1>MCA II Study Materials</h1><br>
+            <h4>(Academic Year 2023-2024 Semester IV)</h4>
+        </header>
+        <section>
+            <button class="btn_onclick btn1" onclick="openTab(event,'ai')">Artificial Intelligence</button>
+            <button class="btn_onclick" onclick="openTab(event,'net')">.Net</button>
+            <button class="btn_onclick" onclick="openTab(event,'awt')">Advance Web Technology</button>
+            <button class="btn_onclick" onclick="openTab(event,'pe')">Program Elective</button>
+        </section>
+         
+        <div class="active_sub_name">
+            <h1 id="demo"></h1>
+        </div>
+        <div class="studyhub">
+            <div class="notes">
+                <h1>Notes</h1>
+                <div class="ai tabcontent">
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                </div>
+
+                <div class="net tabcontent">
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                </div>
+
+                <div class="awt tabcontent">
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                </div>
+
+                <div class="pe tabcontent">
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>          
+                </div>
+            </div>
+            <div class="assignment">
+                <h1>Assignment</h1>
+                <div class="ai tabcontent">
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                </div>
+
+                <div class="net tabcontent">
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                </div>
+
+                <div class="awt tabcontent">
+                    <a href="AWT_Assignment1.pdf" target="_blank"><input onclick="notealert()" type="button" class="submit" value="Assignment No.1"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                </div>
+
+                <div class="pe tabcontent">
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>
+                    <a href=""><input type="button" class="submit" value="Not Available"></a>    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyrigth © Aditya 2024</p>
+        </div>
+
+    </div>
+
+        
+
+<script>
+
+function notealert(){
+    alert("Note: Q9 is not Available and \nDraw Diagram for Flexbox container and CSS Grid layout");
+}
+
+
+var tabcontent=document.getElementsByClassName("ai");
+for(var i=0; i<tabcontent.length; i++){
+        tabcontent[i].style.display="block";
+}
+
+var btns = document.getElementsByClassName("btn1");
+for (var i = 0; i < btns.length; i++) {
+        btns[i].classList.add("active");
+}
+
+var activeTab = document.querySelector('.btn_onclick.active');
+
+// Check if there is an active tab
+if (activeTab) {
+    // Access the inner HTML of the active tab
+    var subjectname = activeTab.innerHTML;
+    document.getElementById("demo").innerHTML=subjectname;
+    console.log(subjectname)
+} 
+
+
+function openTab(evt, param) {  
+
+    var tabcontent=document.getElementsByClassName("tabcontent");
+    for(var i=0; i<tabcontent.length; i++){
+        tabcontent[i].style.display="none";
+   }
+
+   var btns = document.getElementsByClassName("btn_onclick");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].classList.remove("active");
+    }
+    evt.currentTarget.classList.add("active");
+
+    var subject=document.getElementsByClassName(param);
+    for(var j=0; j<subject.length; j++){
+        subject[j].style.display="block";
+    }
+
+    var activeTab = document.querySelector('.btn_onclick.active');
+
+    // Check if there is an active tab
+    if (activeTab) {
+        // Access the inner HTML of the active tab
+        var subjectname = activeTab.innerHTML;
+        console.log(subjectname); // You can use innerHTML as needed
+        document.getElementById("demo").innerHTML = subjectname;
+    } 
+}
+
+
+    
+</script>
+    
+</body>
+</html>
+
