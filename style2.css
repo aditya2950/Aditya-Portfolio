@@ -84,6 +84,7 @@ section{
 }
 
 .notes h1, .assignment h1{
+    font-size: 2vw;
     padding: 3vh 0vh 3vh 0vh;
     background-color: #EA214D;
     border-radius: 1vh 1vh 0vh 0vh;
@@ -140,8 +141,7 @@ section{
     }
 
     .notes h1, .assignment h1{
-        font-size:1.5vw;
-        text-align:left;
+        font-size: 6vw;
     }
 
     .assignment, .notes{
@@ -150,14 +150,12 @@ section{
     }
 
     .notes input, .assignment input{
-        width: 100%;
+        font-size: 3vw;
+        width: 75%;
         padding: 1vw;
         margin-top: 4vh;
     }
     
-    .tabcontent p{
-        font-size: 1vh;
-    }
 }
 
 
