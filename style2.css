@@ -139,6 +139,10 @@ section{
         height:75%;
     }
 
+    .notes h1, .assignment h1{
+        text-align:left;
+    }
+
     .assignment, .notes{
         width: 45%;  
         height: 85%;
